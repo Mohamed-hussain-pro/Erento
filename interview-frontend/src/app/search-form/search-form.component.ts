@@ -26,4 +26,16 @@ export class SearchFormComponent {
       }
     );
   }
+
+  showAllCities(){
+    this.cityService.getCities().subscribe(
+      (data) => {
+        this.searchResults = data ? data : [];
+      },
+      (error) => {
+        console.error('Error fetching cities:', error);
+        this.searchResults = [];
+      }
+    );
+  }
 }

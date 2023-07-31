@@ -11,6 +11,5 @@ export class AppComponent {
    * onSubmit
    */
   public onSubmit() {
-    console.log('test');
   } 
 }
