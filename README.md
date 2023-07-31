@@ -1,8 +1,8 @@
-# Interview for Junior Full-Stack developer
+# Interview for Full-Stack developer
 
 Dear applicant,
 
-thank you again for applying for the Junior Full-Stack developer position at Erento. With the following task we would like to verify your coding skills. Expected timeline for this assignment is to be finished within a week.
+thank you again for applying for the Full-Stack developer position at Erento. With the following task we would like to verify your coding skills. Expected timeline for this assignment is to be finished within a week.
 
 Below you can find 2 folders. Both are just simple initial applications generated from respective CLI tools. The [`interview-frontend`](./interview-frontend) is an Angular 16 frontend application and the [`interview-backend`](./interview-backend) is a NestJS 10 backend application.
 
