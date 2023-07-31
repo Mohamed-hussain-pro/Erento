@@ -1,12 +1,21 @@
-import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
+import { Controller, Get, Param } from '@nestjs/common';
+import { CityService } from './city/city.service';
 
-@Controller()
+@Controller('cities')
 export class AppController {
-  constructor(private readonly appService: AppService) {}
+  constructor(private readonly cityService: CityService) {}
 
   @Get()
-  getHello(): string {
-    return this.appService.getHello();
+  getCities() {
+    return this.cityService.getCities();
+  }
+
+  @Get(':name')
+  getCityByName(@Param('name') name: string) {
+    if(this.cityService.getCityByName(name)){
+      return this.cityService.getCityByName(name);
+    }else{
+      return null;
+    }
   }
 }
